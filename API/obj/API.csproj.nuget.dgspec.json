@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fahua\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj": {}
+    "c:\\Users\\fehuaman\\OneDrive - Lowe's Companies Inc\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fahua\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj": {
+    "c:\\Users\\fehuaman\\OneDrive - Lowe's Companies Inc\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fahua\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj",
+        "projectUniqueName": "c:\\Users\\fehuaman\\OneDrive - Lowe's Companies Inc\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\fahua\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\fahua\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fahua\\Documents\\GitHub\\TandemTriviaUpdated\\API\\obj\\",
+        "projectPath": "c:\\Users\\fehuaman\\OneDrive - Lowe's Companies Inc\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\fehuaman\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\fehuaman\\OneDrive - Lowe's Companies Inc\\Documents\\GitHub\\TandemTriviaUpdated\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\fahua\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\fehuaman\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -50,6 +50,10 @@
               "version": "[5.0.0-rc.2.20475.17, )"
             },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0-rc.2.20475.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
               "target": "Package",
               "version": "[5.0.0-rc.2.20475.6, )"
             },
