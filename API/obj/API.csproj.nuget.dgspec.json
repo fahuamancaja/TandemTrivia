@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\fehuaman\\OneDrive - Lowe's Companies Inc\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj": {}
+    "C:\\Users\\fehuaman\\OneDrive - Lowe's Companies Inc\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\fehuaman\\OneDrive - Lowe's Companies Inc\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj": {
+    "C:\\Users\\fehuaman\\OneDrive - Lowe's Companies Inc\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\fehuaman\\OneDrive - Lowe's Companies Inc\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\fehuaman\\OneDrive - Lowe's Companies Inc\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "c:\\Users\\fehuaman\\OneDrive - Lowe's Companies Inc\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj",
+        "projectPath": "C:\\Users\\fehuaman\\OneDrive - Lowe's Companies Inc\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj",
         "packagesPath": "C:\\Users\\fehuaman\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\fehuaman\\OneDrive - Lowe's Companies Inc\\Documents\\GitHub\\TandemTriviaUpdated\\API\\obj\\",
+        "outputPath": "C:\\Users\\fehuaman\\OneDrive - Lowe's Companies Inc\\Documents\\GitHub\\TandemTriviaUpdated\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

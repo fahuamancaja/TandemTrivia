@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "N6EMCK4Ao6f8tJn1B0dwMmbQxbpGNLynK/0VBBnYkiPyFCd1mihpSSQNkwbhNphU/5R3vWbfp+x3soUsFwPnng==",
+  "dgSpecHash": "9oCTZO96NsUssbCyAtCynCGB1aLMbcPs6lSz3XfgvMxOs1APyWGB1C42mN14/8QFmEkSHEKUlfcqF1uahJZSrQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\fehuaman\\OneDrive - Lowe's Companies Inc\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\fehuaman\\OneDrive - Lowe's Companies Inc\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fehuaman\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\fehuaman\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
