@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\updates\\TandemTrivia-master\\API\\API.csproj": {}
+    "C:\\Users\\fahua\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\updates\\TandemTrivia-master\\API\\API.csproj": {
+    "C:\\Users\\fahua\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\updates\\TandemTrivia-master\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\fahua\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\updates\\TandemTrivia-master\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\fehuaman\\.nuget\\packages\\",
-        "outputPath": "C:\\updates\\TandemTrivia-master\\API\\obj\\",
+        "projectPath": "C:\\Users\\fahua\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\fahua\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fahua\\Documents\\GitHub\\TandemTriviaUpdated\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\fehuaman\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\fahua\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
