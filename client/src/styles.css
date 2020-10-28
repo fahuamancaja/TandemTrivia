@@ -45,3 +45,14 @@
     padding: 15px 0;
   }
   
+  .btn-success:hover {
+    color: #fff;
+    background-color: #2c8d3a;
+    border-color:#38b44a;
+}
+.btn-success {
+  color: #fff;
+  background-color: #2c8d3a;
+  border-color: #38b44a;
+}
+
