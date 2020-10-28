@@ -1,4 +1,4 @@
-<div class="row" *ngIf="user">
+<div class="row" *ngIf="quiz">
     <div class="col-4">
         <h1>Trivia Quiz</h1>
     </div>
@@ -11,10 +11,38 @@
         <tabset class="member-tabset">
             <tab heading='Question 1'>
                 <form #editForm="ngForm" id="editForm">
-                    <h4>Choose one</h4>
+                    <h4>Question</h4>
                     <textarea class="form-control" name="firstChoice" rows="6"></textarea>
                 </form>
+                <pre class="card card-block card-header">{{radioModel || 'null'}}</pre>
+                <div class="form-inline">
+                <div class="btn-group" btnRadioGroup [(ngModel)]="radioModel" [disabled]="modelGroupDisabled">
+                    <label class="btn btn-success" btnRadio="Choice1">Choice1</label>
+                    <label class="btn btn-success" btnRadio="Choice2">Choice2</label>
+                    <label class="btn btn-success" btnRadio="Choice3">Choice3</label>
+                    <label class="btn btn-success" btnRadio="Choice4">Choice4</label>
+                </div>
+                <button class="btn btn-warning" (click)="modelGroupDisabled = !modelGroupDisabled">Save Answer</button>
+                </div>
+                
             </tab>
         </tabset>
     </div>
+    <div class="col-8">
+        <tabset class="member-tabset">
+            <tab heading='Question'>
+                <h4>Question</h4>
+                <p>{{quiz.question}}</p>
+                <h4>Correct Answer</h4>
+                <p>{{quiz.correct}}</p>
+            </tab>
+            <tab heading='Incorrect'>
+                <h4>Incorrect Answer</h4>
+                <p>
+                <li *ngFor="let incorrect of incorrect">
+                    {{incorrect.incorrect}}
+                </li>
+            </p>
+            </tab>
+        </tabset>
 </div>
