@@ -7,42 +7,33 @@
             <strong>Information: </strong> You have made changes. Any unsaved changed will be lost.
         </div>
     </div>
+ 
     <div class="col-8">
         <tabset class="member-tabset">
-            <tab heading='Question 1'>
+            <tab heading = 'Question'>
                 <form #editForm="ngForm" id="editForm">
-                    <h4>Question</h4>
-                    <textarea class="form-control" name="firstChoice" rows="6"></textarea>
+                    <h4>Question 1</h4>
                 </form>
-                <pre class="card card-block card-header">{{radioModel || 'null'}}</pre>
-                <div class="form-inline">
-                <div class="btn-group" btnRadioGroup [(ngModel)]="radioModel" [disabled]="modelGroupDisabled">
-                    <label class="btn btn-success" btnRadio="Choice1">Choice1</label>
-                    <label class="btn btn-success" btnRadio="Choice2">Choice2</label>
-                    <label class="btn btn-success" btnRadio="Choice3">Choice3</label>
-                    <label class="btn btn-success" btnRadio="Choice4">Choice4</label>
+                <p>{{quiz.question}}</p>
+                    <h4>Select Correct Answer</h4>
+                    <div class="all-buttons" btnRadioGroup [(ngModel)]="radioModel" [disabled]="modelGroupDisabled">
+                        <div class="btn-group" >
+                            <div class="correct-answer" >
+                            <p>{{quiz.correct}}</p>
+                            <label class="btn btn-success" btnRadio="Correct" [disabled]="clicked" (click)="clicked = true; incCount();">Select</label>
+                        </div>
+                        <div class="btn-group-test" *ngFor="let incorrect of incorrect">
+                            <p>{{incorrect.incorrect}}</p>
+                            <label class="btn btn-success" btnRadio="Incorrect" [disabled]="clicked" (click)="clicked = true;">Select</label>
+                        </div>
+                    </div>
+                    <pre class="card card-block card-header" >{{radioModel || 'Select your answer'}} </pre>
+                    <pre class="card card-block card-header" *ngIf="radioModel == 'Incorrect'">the correct answer is {{quiz.correct}}</pre>
+                    <div>
+                        <h4>You have: {{this.counterService.count}} points</h4>
+                    </div>
                 </div>
-                <button class="btn btn-warning" (click)="modelGroupDisabled = !modelGroupDisabled">Save Answer</button>
-                </div>
-                
             </tab>
         </tabset>
     </div>
-    <div class="col-8">
-        <tabset class="member-tabset">
-            <tab heading='Question'>
-                <h4>Question</h4>
-                <p>{{quiz.question}}</p>
-                <h4>Correct Answer</h4>
-                <p>{{quiz.correct}}</p>
-            </tab>
-            <tab heading='Incorrect'>
-                <h4>Incorrect Answer</h4>
-                <p>
-                <li *ngFor="let incorrect of incorrect">
-                    {{incorrect.incorrect}}
-                </li>
-            </p>
-            </tab>
-        </tabset>
 </div>
