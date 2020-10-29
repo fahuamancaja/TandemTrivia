@@ -1,6 +1,6 @@
 # Tandem Trivia!
 ## Screenshots
- Included in screenshots folder.
+ Included in Screenshots folder.
 
 ## Description
  Multiple choice quiz! See how many you can get right! Go through a series of Trivia Questions to test out your ability to guess XD!
