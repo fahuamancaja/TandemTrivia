@@ -25,6 +25,7 @@
  
 ## Project Status
  Complete for version 1. Needs work on reiterating instead of statically creating data within tabs in Angular.
+ Need to add loading screen to provide user an indication of data loading.
 
 ## License
  [MIT](https://choosealicense.com/licenses/mit/)
