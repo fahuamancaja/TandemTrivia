@@ -18,7 +18,7 @@
  9. Go to http://localhost:4200/ (DO NOT USE HTTPS - no certs available sadly)
 
 ## Usage
- Made for practicing purposes. To restart simply reload browser
+ Made for practicing purposes. To restart simply hit reload button.
 
 ## Credentials
  Make your own! Though there is a minimum of 4 characterfs and max 8 for Username.
