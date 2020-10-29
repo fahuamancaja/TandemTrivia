@@ -1,6 +1,6 @@
 # Tandem Trivia!
 ## Screenshots
- Included in screenshots folder.
+ Included in Screenshots folder.
 
 ## Description
  Multiple choice quiz! See how many you can get right! Go through a series of Trivia Questions to test out your ability to guess XD!
@@ -18,13 +18,13 @@
  9. Go to http://localhost:4200/ (DO NOT USE HTTPS - no certs available sadly)
 
 ## Usage
- Made for practicing purposes. To restart simply reload browser
+ Made for practicing purposes. To restart simply hit reload button.
 
 ## Credentials
- Make your own! Though there is a minimum of 4 characterfs and max 8 for Username.
+ Make your own! Though there is a minimum of 4 characters and max 8 for Username.
  
 ## Project Status
- Complete for version 1. Needs work on reiterating instead of statically creating tabs in Angular.
+ Complete for version 1. Needs work on reiterating instead of statically creating data within tabs in Angular.
 
 ## License
  [MIT](https://choosealicense.com/licenses/mit/)
