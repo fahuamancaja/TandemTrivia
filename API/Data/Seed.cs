@@ -11,10 +11,6 @@ namespace API.Data
 {
     public class Seed
     {
-        public Seed()
-        {
-        }
-
         public static async Task SeedQuestions(DataContext context)
         {
             if (await context.Questions.AnyAsync()) return;
