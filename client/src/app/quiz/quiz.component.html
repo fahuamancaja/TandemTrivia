@@ -1,24 +1,19 @@
 <div class="row" *ngIf="incorrect">
     <div class="col-4">
         <h1>Trivia Quiz</h1>
-        
     </div>
-
     <div class="col-12">
         <div class="alert alert-info" *ngIf="editForm.pristine">
         <button type="button" class="btn btn-primary mr-4" (click)="reloadWindow();">Restart</button>
         <strong>Information: </strong> If you leave site, score will be lost.
         </div>
-
     </div>
-
     <div class="col-12">
         <tabset class="member-tabset">
             <tab heading = 'Question1'>
                 <form #editForm="ngForm" id="editForm">
                     <h4>Question 1</h4>
             </form>
-
                 <p>{{quiz.question}}</p>
                     <h4>Select Correct Answer</h4>
                     <div class="all-buttons">
@@ -42,17 +37,15 @@
                 <form #editForm2="ngForm" id="editForm2">
                     <h4>Question 2</h4>
                 </form>
-
                 <p>{{quiz2.question}}</p>
                     <h4>Select Correct Answer</h4>
-
                     <div class="buttons2">
                         <div class="mr-3 btn-group" btnRadioGroup [(ngModel)]="radioModel2">
-                            <div class="correct-answer" *ngIf="!clicked2">
-                                <label class="mr-3 btn btn-success" btnRadio="Correct" [disabled]="clicked2" (click)="clicked2 = true; incCount();">{{quiz2.correct}}</label>
-                            </div>
                             <div class="ml-4 btn-group-test" *ngFor="let incorrect2 of incorrect2">
                                 <label class="mr-3 btn btn-success" btnRadio="Incorrect" [disabled]="clicked2" (click)="clicked2 = true;">{{incorrect2.incorrect}}</label>
+                            </div>
+                            <div class="correct-answer" *ngIf="!clicked2">
+                                <label class="mr-3 btn btn-success" btnRadio="Correct" [disabled]="clicked2" (click)="clicked2 = true; incCount();">{{quiz2.correct}}</label>
                             </div>
                         </div>
                         <pre class="card card-block card-header" >{{radioModel2 || 'Select your answer'}} </pre>
@@ -70,11 +63,11 @@
                     <h4>Select Correct Answer</h4>
                     <div class="buttons3" >
                         <div class="mr-3 btn-group" btnRadioGroup [(ngModel)]="radioModel3">
-                            <div class="correct-answer" *ngIf="!clicked3">
-                                <label class="mr-3 btn btn-success" btnRadio="Correct" [disabled]="clicked3" (click)="clicked3 = true; incCount();">{{quiz3.correct}}</label>
-                            </div>
                             <div class="ml-4 btn-group-test" *ngFor="let incorrect3 of incorrect3">
                                 <label class="mr-3 btn btn-success" btnRadio="Incorrect" [disabled]="clicked3" (click)="clicked3 = true;">{{incorrect3.incorrect}}</label>
+                            </div>
+                            <div class="correct-answer" *ngIf="!clicked3">
+                                <label class="mr-3 btn btn-success" btnRadio="Correct" [disabled]="clicked3" (click)="clicked3 = true; incCount();">{{quiz3.correct}}</label>
                             </div>
                         </div>
                         <pre class="card card-block card-header" >{{radioModel3 || 'Select your answer'}} </pre>
@@ -136,11 +129,11 @@
                     <h4>Select Correct Answer</h4>
                     <div class="buttons6" >
                         <div class="mr-3 btn-group" btnRadioGroup [(ngModel)]="radioModel6">
-                            <div class="correct-answer" *ngIf="!clicked6">
-                                <label class="mr-3 btn btn-success" btnRadio="Correct" [disabled]="clicked6" (click)="clicked6 = true; incCount();">{{quiz6.correct}}</label>
-                            </div>
                             <div class="ml-4 btn-group-test" *ngFor="let incorrect6 of incorrect6">
                                 <label class="mr-3 btn btn-success" btnRadio="Incorrect" [disabled]="clicked6" (click)="clicked6 = true;">{{incorrect6.incorrect}}</label>
+                            </div>
+                            <div class="correct-answer" *ngIf="!clicked6">
+                                <label class="mr-3 btn btn-success" btnRadio="Correct" [disabled]="clicked6" (click)="clicked6 = true; incCount();">{{quiz6.correct}}</label>
                             </div>
                         </div>
                         <pre class="card card-block card-header" >{{radioModel6 || 'Select your answer'}} </pre>
@@ -158,11 +151,11 @@
                     <h4>Select Correct Answer</h4>
                     <div class="buttons7" >
                         <div class="mr-3 btn-group" btnRadioGroup [(ngModel)]="radioModel7">
-                            <div class="correct-answer" *ngIf="!clicked7">
-                                <label class="mr-3 btn btn-success" btnRadio="Correct" [disabled]="clicked7" (click)="clicked7 = true; incCount();">{{quiz7.correct}}</label>
-                            </div>
                             <div class="ml-4 btn-group-test" *ngFor="let incorrect7 of incorrect7">
                                 <label class="mr-3 btn btn-success" btnRadio="Incorrect" [disabled]="clicked7" (click)="clicked7 = true;">{{incorrect7.incorrect}}</label>
+                            </div>
+                            <div class="correct-answer" *ngIf="!clicked7">
+                                <label class="mr-3 btn btn-success" btnRadio="Correct" [disabled]="clicked7" (click)="clicked7 = true; incCount();">{{quiz7.correct}}</label>
                             </div>
                         </div>
                         <pre class="card card-block card-header" >{{radioModel7 || 'Select your answer'}} </pre>
@@ -224,11 +217,11 @@
                     <h4>Select Correct Answer</h4>
                     <div class="buttons10" >
                         <div class="mr-3 btn-group" btnRadioGroup [(ngModel)]="radioModel10">
-                            <div class="correct-answer" *ngIf="!clicked10">
-                                <label class="mr-3 btn btn-success" btnRadio="Correct" [disabled]="clicked10" (click)="clicked10 = true; incCount();">{{quiz10.correct}}</label>
-                            </div>
                             <div class="ml-4 btn-group-test" *ngFor="let incorrect10 of incorrect10">
                                 <label class="mr-3 btn btn-success" btnRadio="Incorrect" [disabled]="clicked10" (click)="clicked10 = true;">{{incorrect10.incorrect}}</label>
+                            </div>
+                            <div class="correct-answer" *ngIf="!clicked10">
+                                <label class="mr-3 btn btn-success" btnRadio="Correct" [disabled]="clicked10" (click)="clicked10 = true; incCount();">{{quiz10.correct}}</label>
                             </div>
                         </div>
                         <pre class="card card-block card-header" >{{radioModel10 || 'Select your answer'}} </pre>
@@ -240,5 +233,4 @@
             </tab>
         </tabset>
     </div>
-
 </div>
