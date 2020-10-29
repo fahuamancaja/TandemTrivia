@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fMs0KOhY1C+zb2Mih7O/ry0XQBbYuCqVVt/08sDeiXIuW/57f1jcdV0Tia71SEAI239vRfKREaWvMrFnYs7vfQ==",
+  "dgSpecHash": "JySXYoPAETtfviu28294NLrWbP4de9bP1opJBaRtKz8ud3bGd90HwYvO9otEA5NqeRk4LA1TsamLRP6bMAxA6Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fahua\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\fahua\\Documents\\GitHub\\TandemTrivia\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fahua\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\fahua\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",

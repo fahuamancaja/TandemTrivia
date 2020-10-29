@@ -1,12 +1,15 @@
 <div class="row" *ngIf="incorrect">
     <div class="col-4">
         <h1>Trivia Quiz</h1>
+        
     </div>
 
     <div class="col-12">
         <div class="alert alert-info" *ngIf="editForm.pristine">
-            <strong>Information: </strong> If you leave site, score will be lost.
+        <button type="button" class="btn btn-primary mr-4" (click)="reloadWindow();">Restart</button>
+        <strong>Information: </strong> If you leave site, score will be lost.
         </div>
+
     </div>
 
     <div class="col-12">

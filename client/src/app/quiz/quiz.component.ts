@@ -193,5 +193,8 @@ export class QuizComponent implements OnInit {
     this.counterService.count += 1;
   }
 
+  reloadWindow() {
+    window.location.reload();
+  }
 
 }

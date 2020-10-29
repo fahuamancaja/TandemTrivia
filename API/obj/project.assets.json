@@ -1710,11 +1710,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\fahua\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\fahua\\Documents\\GitHub\\TandemTrivia\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "c:\\Users\\fahua\\Documents\\GitHub\\TandemTriviaUpdated\\API\\API.csproj",
+      "projectPath": "C:\\Users\\fahua\\Documents\\GitHub\\TandemTrivia\\API\\API.csproj",
       "packagesPath": "C:\\Users\\fahua\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\fahua\\Documents\\GitHub\\TandemTriviaUpdated\\API\\obj\\",
+      "outputPath": "C:\\Users\\fahua\\Documents\\GitHub\\TandemTrivia\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
