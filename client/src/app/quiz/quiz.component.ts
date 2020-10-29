@@ -1,6 +1,7 @@
 import { Component, HostListener, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
+import { connected, disconnect } from 'process';
 import { take } from 'rxjs/operators';
 import { User } from 'src/app/_models/user';
 import { AccountService } from 'src/app/_services/account.service';
@@ -47,6 +48,8 @@ export class QuizComponent implements OnInit {
   quiz10: Quiz;
   incorrect10: IncorrectAnswer[] = [];
 
+  arrayTest: number[] = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21];
+
   radioModel = '';
   radioModel2 = '';
   radioModel3 = '';
@@ -71,12 +74,11 @@ export class QuizComponent implements OnInit {
   clicked8 = false;
   clicked9 = false;
   clicked10 = false;
-
-
+  
 
 
   @HostListener('window:beforeunload', ['$event']) unloadNotification($event: any) {
-    if(this.editForm.dirty) {
+    if(this.editForm.pristine) {
       $event.returnValue = true;
     }
   }
@@ -87,6 +89,11 @@ export class QuizComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    this.loadAllQuestions();
+  }
+
+  loadAllQuestions()
+  {
     this.loadQuestion1();
     this.loadQuestion2();
     this.loadQuestion3();
@@ -99,85 +106,81 @@ export class QuizComponent implements OnInit {
     this.loadQuestion10();
   }
 
-  loadQuestion1() {
-    this.quizService.getQuizQuestion(1).subscribe(quiz => {
-      this.quiz = quiz;
-      console.log(quiz);
+  randomQuestion() {
+    var num = Math.floor(Math.random() * this.arrayTest.length);
+    var roll = this.arrayTest.splice(num,1);
+    return roll[0];
+  }
 
+  loadQuestion1() {
+    this.randomQuestion();
+    this.quizService.getQuizQuestion(this.randomQuestion()).subscribe(quiz => {
+      this.quiz = quiz;
       this.incorrect = quiz.incorrect;
     })
   }
   loadQuestion2() {
-    this.quizService.getQuizQuestion(2).subscribe(quiz => {
+    this.quizService.getQuizQuestion(this.randomQuestion()).subscribe(quiz => {
       this.quiz2 = quiz;
-      console.log(quiz);
 
       this.incorrect2 = this.quiz2.incorrect;
     })
   }
   loadQuestion3() {
-    this.quizService.getQuizQuestion(3).subscribe(quiz => {
+    this.quizService.getQuizQuestion(this.randomQuestion()).subscribe(quiz => {
       this.quiz3 = quiz;
-      console.log(quiz);
 
       this.incorrect3 = this.quiz3.incorrect;
     })
   }
   loadQuestion4() {
-    this.quizService.getQuizQuestion(4).subscribe(quiz => {
+    this.quizService.getQuizQuestion(this.randomQuestion()).subscribe(quiz => {
       this.quiz4 = quiz;
-      console.log(quiz);
 
       this.incorrect4 = this.quiz4.incorrect;
     })
   }
   loadQuestion5() {
-    this.quizService.getQuizQuestion(5).subscribe(quiz => {
+    this.quizService.getQuizQuestion(this.randomQuestion()).subscribe(quiz => {
       this.quiz5 = quiz;
-      console.log(quiz);
 
       this.incorrect5 = this.quiz5.incorrect;
     })
   }
   loadQuestion6() {
-    this.quizService.getQuizQuestion(6).subscribe(quiz => {
+    this.quizService.getQuizQuestion(this.randomQuestion()).subscribe(quiz => {
       this.quiz6 = quiz;
-      console.log(quiz);
 
       this.incorrect6 = this.quiz6.incorrect;
     })
   }
 
   loadQuestion7() {
-    this.quizService.getQuizQuestion(7).subscribe(quiz => {
+    this.quizService.getQuizQuestion(this.randomQuestion()).subscribe(quiz => {
       this.quiz7 = quiz;
-      console.log(quiz);
 
       this.incorrect7 = this.quiz7.incorrect;
     })
   }
   loadQuestion8() {
-    this.quizService.getQuizQuestion(8).subscribe(quiz => {
+    this.quizService.getQuizQuestion(this.randomQuestion()).subscribe(quiz => {
       this.quiz8 = quiz;
-      console.log(quiz);
 
       this.incorrect8 = this.quiz8.incorrect;
     })
   }
 
   loadQuestion9() {
-    this.quizService.getQuizQuestion(9).subscribe(quiz => {
+    this.quizService.getQuizQuestion(this.randomQuestion()).subscribe(quiz => {
       this.quiz9 = quiz;
-      console.log(quiz);
 
       this.incorrect9 = this.quiz9.incorrect;
     })
   }
 
   loadQuestion10() {
-    this.quizService.getQuizQuestion(10).subscribe(quiz => {
+    this.quizService.getQuizQuestion(this.randomQuestion()).subscribe(quiz => {
       this.quiz10 = quiz;
-      console.log(quiz);
 
       this.incorrect10 = this.quiz10.incorrect;
     })
@@ -189,4 +192,6 @@ export class QuizComponent implements OnInit {
   public incCount(){
     this.counterService.count += 1;
   }
+
+
 }

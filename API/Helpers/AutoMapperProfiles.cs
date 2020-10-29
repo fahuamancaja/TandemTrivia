@@ -10,7 +10,6 @@ namespace API.Helpers
     {
         public AutoMapperProfiles()
         {
-            CreateMap<AppUser, MemberDto>();
             CreateMap<AppQuestion, QuestionDto>();
             CreateMap<IncorrectAnswer, IncorrectDto>();
         }
