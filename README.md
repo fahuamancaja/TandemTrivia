@@ -7,7 +7,7 @@
 
 ## Installation
  1. Clone Repository
- 2. Install Dotnet Core 5 Sdk
+ 2. Install Dotnet 5 Sdk
  3. Install nodejs with npm
  4. Run in Terminal: dotnet tool install --global dotnet-ef
  5. Drop Database: dotnet ef database drop
