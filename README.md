@@ -12,7 +12,7 @@
  4. Run in Terminal: dotnet tool install --global dotnet-ef
  5. Drop Database: dotnet ef database drop
  6. Start API from API folder by running from CLI: dotnet run
- 6a. Might need to run, as well: Dotnet dev-certs https --trust
+    Might need to run, as well: Dotnet dev-certs https --trust
  7. In Angular side within client folder run: ng serve
  8. Data is automatically seeded to sqlite db
  9. Go to http://localhost:4200/ (DO NOT USE HTTPS - no certs available sadly)
