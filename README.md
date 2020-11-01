@@ -7,7 +7,7 @@
 
 ## Installation
  1. Clone Repository
- 2. Install Dotnet 5 Sdk (Dotnet 3 will not work!) 
+ 2. Install .NET 5 Sdk (Dotnet 3 will not work!) 
  3. Install nodejs with npm
  4. Run in Terminal: dotnet tool install --global dotnet-ef
  5. Drop Database: dotnet ef database drop
@@ -32,4 +32,4 @@
  
 ## Known Bug
  When first loading into Visual Studio you might have to reinstall the Microsoft.EntityFrameworkCore.Analyzers 5.0.0-rc.2.20475.6 package.
- You might get assembly errors if Dotnet 5 is not default or primary. Please ensure Dotnet 5.0+ is installed!
+ You might get assembly errors if .NET 5 is not default or primary. Please ensure Dotnet 5.0+ is installed!
