@@ -1,4 +1,4 @@
-# Tandem Trivia!
+# Video Game Trivia!
 ## Screenshots
  Included in Screenshots folder.
 
@@ -27,7 +27,6 @@
  Complete for version 1. Needs work on reiterating instead of statically creating data within tabs in Angular.
  Need to add loading screen to provide user an indication of data loading.
  
- Next version will add Learn More link to direct to Tandem.
  Will also work on randomizing answer buttons
 
 ## License
