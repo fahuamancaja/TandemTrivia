@@ -9,7 +9,7 @@
  1. Clone Repository
  2. Install .NET 5 Sdk (Dotnet 3 will not work!) 
  3. Install nodejs with npm
- 4. Run in Terminal: dotnet tool install --global dotnet-ef
+ 4. Run in Terminal: dotnet tool install --global dotnet-ef (Make sure version 5+ installed)
  5. Drop Database: dotnet ef database drop
  6. Start API from API folder by running from CLI: dotnet run. 
     Might need to run, as well: Dotnet dev-certs https --trust
