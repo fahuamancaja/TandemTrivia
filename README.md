@@ -33,6 +33,5 @@
  [MIT](https://choosealicense.com/licenses/mit/)
  
 ## Known Bug
- When first loading into Visual Studio Code you might have to reinstall the Microsoft.EntityFrameworkCore.Analyzers 5.0.0-rc.2.20475.6 package.
+ When first loading into Visual Studio you might have to reinstall the Microsoft.EntityFrameworkCore.Analyzers 5.0.0-rc.2.20475.6 package.
  You might get assembly errors if .NET 5 is not default or primary. Please ensure .NET 5.0+ is installed!
- If you are still having MSBuild issues and you have Visual Studio Community installed aside from Visual Studio Code, you might have to install Visual Studio Community 2019 Preview.
